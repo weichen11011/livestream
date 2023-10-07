@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <link rel="stylesheet" href="sign-in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>fontpage</title>
+    <link rel="stylesheet" href="all.css" type="text/css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="page.css"> 
+    <script src="fontpage.js"></script>
+</head>
+<body>
+<!--  -->
+<div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h3>Login</h3>
+        </div>
+
+        <div class="form_wrap"> 
+                <div class="input_wrap">               
+                    <input class="text1" type="text"  name="uname" required>
+                    <label for="uname">username</label>
+                </div>
+                <div class="input_wrap">                   
+                    <input  class="text1" type="password" name="psw" required>
+                    <label for="psw">password</label>
+                </div>     
+            <div class="checkbox1">
+                <input type="checkbox" checked="checked" name="remember"> remember me
+            </div>
+            <div class="bttn2">
+                <button class="bttn" type="submit">Login</button>
+            </div>
+        </div>
+
+    
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </form>
+</div>
+        
+<!--  -->
+
+    <div class="container">
+
+        <div class="box1">
+
+            <div class="function">
+
+            </div>
+
+            <div class="wrap">
+                <div class="serch">
+                    <input class="serch-bar" type="text" name="serch" id="serch" placeholder="輸入影片名稱">
+                    <button class="serch-btn"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+            </div>
+
+            <div class="user-action">
+
+                <button class="signin" onclick="document.getElementById('id01').style.display='block'">登入</button>
+                <button class="signup">註冊</button>
+                <button class="user-avatar"><i id="fa-solid " class="fa-solid fa-user-tie"></i></button>
+
+            </div>
+
+        </div>
+
+        <div class="box2">
+
+                 <nav id="sidebar">
+
+                    <button type="button" id="collapse" class="collapse-btn">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+
+                    <ul class="list-unstyled">
+                        <p>頻道</p>
+                        <li>
+                            <a href="#list1" data-bs-toggle="collapse"> <i class="fa-solid fa-house"></i> </a>
+
+                            <ul id="list1" class="">
+                                <li> 你好 </li>
+                                                       
+                                <li> 你好 </li>
+                            
+                                <li> 你好 </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-house"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-house"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-house"></i> </a>
+                        </li>
+
+                    </ul>
+
+                </nav> 
+
+                <div class="box2-2">
+
+                    <div class="box2-2-1">
+
+                    </div>
+                    <div class="box2-2-2">
+
+                    </div>
+                
+                </div>
+
+        </div>
+
+
+
+
+    </div>
+
+       
+</body>
+</html>

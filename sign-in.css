@@ -1,0 +1,154 @@
+  
+  .bttn{
+    background-color: rgb(10,102,194);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    height: 60px;
+    width: 330px; 
+    margin-top: 20px;  
+    margin-left:-0.5rem;
+  }
+
+  .bttn2{
+    width:400px;
+    padding-right:2rem;
+  }
+
+  .bttn:hover {
+    background-color: rgb(6, 62, 117);
+  }
+
+  .checkbox1{
+    padding-top:0.8rem;
+  }
+  
+ h3{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    font-size:2rem;
+  }   
+  
+   span.psw {
+    float: right;
+    padding-top: 20px;
+    padding-left:0.1rem;
+  } 
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #ffffff;
+    position: absolute;
+
+    left: 50%;
+    top: 30rem;
+    height: 30rem;
+    margin-top: -150px ;
+    width: 300px;
+    margin-left: -200px;  
+    border:0.4rem solid rgb(87, 228, 169);
+    border-radius: 8px;
+    padding: 30px 60px; 
+
+    display: flex;
+    flex-direction: column;
+    z-index:1;
+  }
+  
+
+  .close {
+    position: relative; 
+    padding-left:19rem;
+    padding-top:-10rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  input:focus + label, input:valid + label{
+    font-size: 12px;
+    color: #afbdcf;
+    top: -5px;
+    left:10px;
+    background: #ffffff;
+    padding: 0px 5px 0px 5px;
+  }  
+  .input_wrap {
+    width:auto; 
+    height:auto; 
+    position:relative;
+    margin-top:30px;
+    margin-bottom: 10px;
+  }
+  .input_wrap label {
+    font-family:arial;
+    font-size:16px;
+    color: #afbdcf;
+    padding: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    pointer-events: none;
+  }
+
+  .text1{
+    border: 2px solid #757680;
+    border-radius: 15px;
+    height: 47px;
+    width:300px;
+    color: #000000;
+    font-size: 14px;
+    box-shadow: none;  
+
+  }
